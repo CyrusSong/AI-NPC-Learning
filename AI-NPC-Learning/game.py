@@ -61,6 +61,8 @@ def apply_proposal(state: GameState, proposal: Proposal) -> str:
         # 更新的Memory.player_name
         state.memory.player_name = name
         remember(state, f"玩家告诉我名字是{name}。")
+        if proposal.speech:
+            return proposal.speech
         return f"你好，{name}！我叫林老板，我记住你啦~。"
 
     if proposal.intent == "buy_potion":
@@ -102,4 +104,3 @@ def describe_state(state: GameState) -> str:
         f"店铺库存：{state.shop.stock} 瓶 | 单价：{state.shop.price} 金币\n"
         f"店主记住的名字：{state.memory.player_name or '尚未认识'}"
     )
-

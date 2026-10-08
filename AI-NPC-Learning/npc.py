@@ -65,6 +65,6 @@ class RuleBasedNPC:
 
         return Proposal(
             "talk",
-            speech="这句话我暂时听不懂。你可以说“我叫小陈”“买药”或“你记得我吗”。",
+            speech="这句话我暂时听不懂。你可以说“我叫小成”“买药”或“你记得我吗”。",
         )
 
