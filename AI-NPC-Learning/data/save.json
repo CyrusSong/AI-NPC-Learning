@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "state": {
+    "player": {
+      "coins": 10,
+      "potions": 1,
+      "health": 80,
+      "max_health": 100
+    },
+    "shop": {
+      "stock": 1,
+      "price": 10
+    },
+    "memory": {
+      "player_name": "小成",
+      "recent_events": [
+        "玩家告诉我名字是小成。",
+        "玩家买了2瓶药，花费20枚金币。",
+        "玩家使用了一瓶药，恢复20点生命。"
+      ]
+    }
+  }
+}
